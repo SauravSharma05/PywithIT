@@ -67,3 +67,37 @@ my_list.remove(56)
 #             return 2
 #         case _:
 #             return 'nothing'
+
+# for n in range(6,60):     //  here range does not included 6 and 60
+#     for x in range(6,n):
+#         if n % x == 0:
+#             print(f"{n} equal to {x} * {n // x}")
+#             break
+
+from enum import Enum
+class Numbr(Enum):
+    num1 = 1
+    num2 = 2
+    num3 = 3
+
+
+try:
+    user_input = int(input("Enter a number between 1 and 3: "))
+    
+    if user_input < 1 or user_input > 3:
+        print("Please enter a number between 1 and 3.")
+    else:
+        numbe = Numbr(user_input)
+
+        match numbe:
+            case Numbr.num1:
+                print('1')
+            case Numbr.num2:
+                print('2')
+            case Numbr.num3:
+                print('3')
+
+except ValueError:
+    print("Please enter a valid integer.")
+except Exception as e:
+    print(f"An error occurred: {e}")
