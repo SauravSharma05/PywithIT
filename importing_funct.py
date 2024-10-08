@@ -26,7 +26,7 @@
 # importing styles :
 #from filename import fun1, fun2            // specific functions
 #from filename import *            // all function
-f#rom filename import fun1 as function_1      // with naming 
+#from filename import fun1 as function_1      // with naming 
 
 
 # use command python filename // to run code of specific file
