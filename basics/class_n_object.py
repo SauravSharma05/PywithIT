@@ -20,3 +20,20 @@
 # my_dog = Dog("hello", "german shephard")
 # my_dog.bark()
 
+class Car:
+    type_of_vehicle = "Automobile"
+
+    def __init__(self, model, year):
+        self.model = model  
+        self.year = year    
+
+    def honk(self):
+        return "Beep!"
+
+my_car = Car("Toyota", 2020)
+
+print(my_car.model)       
+print(my_car.year)        
+print(my_car.honk())     
+
+
