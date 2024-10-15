@@ -38,24 +38,44 @@
 
 
 
-class Animal: # Constructor to initialize species and habitat
-      def __init__(self, species_name, habitat):
-            self.species_name = species_name
-            self.habitat = habitat
-      
-      def display_info(self):
-      print("Species Name:", self.species_name)
-      print("Habitat:", self.habitat)# Creating instances of Animal with different attributes
+# class Animal: # Constructor to initialize species and habitat
+#       def __init__(self, species_name, habitat):
+#             self.species_name = species_name
+#             self.habitat = habitat
+#       
+#       def display_info(self):
+#       print("Species Name:", self.species_name)
+#       print("Habitat:", self.habitat)# Creating instances of Animal with different attributes
 
-lion = Animal("Lion", "Savannah")
-penguin = Animal("Penguin", "Antarctica")     
+# lion = Animal("Lion", "Savannah")
+# penguin = Animal("Penguin", "Antarctica")     
 
-lion.display_info() # Outputs the details of the Lion
-penguin.display_info() # Outputs the details of the Penguin
+# lion.display_info() 
+# penguin.display_info() 
 
 # Accessing attributes directly
-print("Species for Lion is", lion.species_name)
-print("Habitat for Penguin is", penguin.habitat)
+# print("Species for Lion is", lion.species_name)
+# print("Habitat for Penguin is", penguin.habitat)
+
+
+class Book:
+      def __init__(self, title, author):
+self.title = title
+self.author = author
+booktitle1 = input("Enter the title of the first book: ")
+author1 = input("Enter the author of the first book: ")
+book1 = Book(title1, author1)
+
+booktitle2 = input("Enter the title of the second book: ")
+author2 = input("Enter the author of the second book: ")
+book2 = Book(title2, author2)
+
+print("\nBook 1:")
+print(f"Title: {book1.title}, Author: {book1.author}")
+print("\nBook 2:")print(f"Title: {book2.title}, Author: {book2.author}")
+
+
+
 
 
 
