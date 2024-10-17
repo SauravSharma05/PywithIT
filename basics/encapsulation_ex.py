@@ -16,3 +16,18 @@ class Sensor:
             print(sensor1.get_version())
             sensor1.set_version('2.0')
             print(sensor1.get_version())
+
+
+
+
+#inheritance
+class Accelerometer:
+      def __init__(self, name):
+            self.name = name
+
+      def show_type(self):
+            print(f'I am an accelerometer named {self.name}')
+
+class UCBAcc(Accelerometer):
+      def show_type(self):
+            print(f'I am {self.name}, created at UC Berkeley!')acc_ucb =                   UCBAcc('UCBAcc')acc_ucb.show_type()
