@@ -31,3 +31,27 @@ class Accelerometer:
 class UCBAcc(Accelerometer):
       def show_type(self):
             print(f'I am {self.name}, created at UC Berkeley!')acc_ucb =                   UCBAcc('UCBAcc')acc_ucb.show_type()
+
+
+#polymorphism
+class Shape:
+def area(self):
+
+class Circle(Shape):
+      def __init__(self, radius):
+            self.radius = radius
+
+      def area(self):
+            return 3.14 * (self.radius ** 2)
+
+class Square(Shape):
+      def __init__(self, side):
+            self.side = side
+
+      def area(self):
+            return self.side ** 2shapes = [Circle(5), Square(4)]
+            for shape in shapes: print(f'Area: {shape.area()}')
+
+
+
+
