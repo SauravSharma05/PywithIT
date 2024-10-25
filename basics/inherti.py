@@ -68,3 +68,27 @@ dog_instance.bark()
 
 cat_instance.sound()  
 cat_instance.meow()   
+
+
+# hybrid inheritance
+class A:
+    def method_a(self):
+        print("Method from A")
+
+class B(A):
+    def method_b(self):
+        print("Method from B")
+
+class C(A):
+    def method_c(self):
+        print("Method from C")
+
+class D(B, C):  
+    def method_d(self):
+        print("Method from D")
+
+d_instance = D()
+d_instance.method_a()  
+d_instance.method_b()  
+d_instance.method_c()  
+d_instance.method_d()  
