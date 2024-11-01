@@ -14,3 +14,14 @@ if __name__ == "__main__":
 
     descending_order = sort_descending(numbers)
     print("Descending Order:", descending_order)
+
+    def is_armstrong_number(number):
+    num_digits = len(str(number))
+    armstrong_sum = sum(int(digit) ** num_digits for digit in str(number))
+    return armstrong_sum == number
+
+number = 532
+if is_armstrong_number(number):
+    print(f"{number} is an Armstrong number")
+else:
+    print(f"{number} is not an Armstrong number")
