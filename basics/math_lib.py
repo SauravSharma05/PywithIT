@@ -26,3 +26,21 @@ print(gcd_value)
 exp_value = math.exp(1)
 print(exp_value)
 
+#using with example 
+import math
+
+# to calculate square root and power
+num = 9
+print("Square root:", math.sqrt(num))       
+print("Power (2^3):", math.pow(2, 3))        
+
+# Calculate GCD and factorial
+print("GCD of (48,18):", math.gcd(48, 18))  
+print("Factorial of 5:", math.factorial(5))  
+
+# Trigonometric values in radians
+angle_rad = math.pi / 4 
+print("Sine:", math.sin(angle_rad))          
+
+# Using constants 
+print("Value of Pi:", math.pi)              
