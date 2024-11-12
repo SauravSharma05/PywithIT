@@ -19,3 +19,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    class Animal:
+    def __init__(self, species):
+        self.species = species
+
+    def make_sound(self):
+        return "Some sound"
+
+class Cat(Animal):
+    def __init__(self, name, age):
+        super().__init__("Cat")
+        self.name = name
+        self.age = age
+
+    def make_sound(self):
+        return f"{self.name} says Meow!"
+
+my_cat = Cat("Whiskers", 2)
+print(my_cat.make_sound())
