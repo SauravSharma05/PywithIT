@@ -36,3 +36,32 @@ def compare_lists(l1, l2):
 
 print("List1 and List2 are equal:", compare_lists(list1, list2))  
 print("List1 and List3 are equal:", compare_lists(list1, list3))  
+
+
+# object handling 
+
+class Car:
+    def __init__(self, model, price):
+        self.model = model
+        self.price = price
+
+    def display_info(self):
+        return f"Model: {self.model}, Price: {self.price}"
+
+print(my_car.display_info())
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} ({self.age})"
+
+person1 = Person("Alice", 30)
+print(person1)  
+
+print(getattr(person1, 'name'))
+setattr(person1, 'age', 31)
+print(person1)  
