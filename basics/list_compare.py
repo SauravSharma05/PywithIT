@@ -65,3 +65,23 @@ print(person1)
 print(getattr(person1, 'name'))
 setattr(person1, 'age', 31)
 print(person1)  
+
+
+
+# decorators
+
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("arg1")
+        result = func(*args, **kwargs)
+        print("arg 2")
+        return result
+    return wrapper
+
+class MyClass:
+    @my_decorator
+    def my_method(self):
+        print("Executing my_method")
+
+obj = MyClass()
+obj.my_method()
